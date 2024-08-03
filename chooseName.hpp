@@ -18,12 +18,27 @@ class A1 {
 
         string child1gender = getGender(child1first);
 
+        if (child1gender == gender) {
+            // rule 2 - same gender
+            if (gender == "Boy") {
+                return father1st + " " + child1second;
+            } else {
+                return mother1st + " " + child1second;
+            }
+        } else {
+            // rule 1 - different gender
+            if (gender == "Boy") {
+                return father2nd + " " + father1st;
+            } else {
+                return mother2nd + " " + mother1st;
+            }
+        }
     }
 
     public:
     void splitName(const string &fullName, string &first, string &second) {
-        string first = "";
-        string second = "";
+        first = "";
+        second = "";
         bool foundspace = false;
 
         for (int i = 0; i < fullName.size(); i++) {
