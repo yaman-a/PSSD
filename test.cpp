@@ -1,7 +1,7 @@
-#include "inchworm.hpp"
+#include "Inchworm.hpp"
 
 int main() {
-    inchworm worm;
+    Inchworm worm;
 
     std::cout << worm.lunchtime(1000,7,3) << std::endl;
 

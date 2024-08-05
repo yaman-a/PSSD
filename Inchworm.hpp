@@ -1,6 +1,6 @@
 #include <iostream>
 
-class inchworm {
+class Inchworm {
     public:
     int lunchtime(int branch, int rest, int leaf) {
         int count = 0;
